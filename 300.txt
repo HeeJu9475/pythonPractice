@@ -1,0 +1,47 @@
+2020.07.10
+
+007번
+naver;kakao;sk;samsung
+print("naver", "kakao", "samsung", sep=";")
+간단하게 print문안에 다 넣었었는데, sep인자로 구분할수 있다는걸 잊고 있었다.
+
+009번
+print("first", end=""); print("second")
+줄바꿈 없이 출력할때 end인자 사용하기
+
+022번
+license_plate = "24가 2210"
+print(license_plate[-4:])
+뒤에 *자리만 출력할때 음수 사용하기
+
+024번
+print(string[::-1])
+문자열 거꾸로 출력할 때
+
+027번
+url = "http://sharebook.kr"
+print(url[-2:])
+print(url.split('.')[-1])
+도메인은 2자리일 수도 있고, 3자리 일 수도 있기 때문에 슬라이싱이 아닌 스플릿 사용하기
+
+036번
+print("이름: {} 나이: {}".format(name1, age1))
+format 앞에 .꼭 붙이기
+
+037번
+print(f"이름: {name1} 나이: {age1}")
+접두사 f와"는 붙여서 사용하기
+
+039번
+분기 = "2020/03(E) (IFRS연결)"
+print(분기[:7])
+문자열 슬라이싱에서 끝번호는 포함되지 않음 주의!
+
+044~046번
+file_name = "2020_보고서.xlsx"
+file_name.startswith("2020")
+file_name.endswith(("xlsx", "xls"))
+startswith(시작하는문자, 시작지점)
+endswith(끝나는문자, 문자열의시작, 문자열의끝)
+true나 false 반환
+switch가 아니라 swith임 주의
